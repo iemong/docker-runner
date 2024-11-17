@@ -71,6 +71,7 @@ function App() {
 
       <section className="mb-8">
         <h2 className="text-lg font-bold mb-4">ツールのインストール</h2>
+        <p className="mb-1 text-sm text-gray-500">まだの人は以下のツールをインストールしてください</p>
         <div className="flex gap-2">
           <Button variant="secondary" asChild>
             <a href="https://desktop.github.com/download/" target="_blank">
@@ -83,11 +84,17 @@ function App() {
             </a>
           </Button>
         </div>
+        <h3 className="text-sm font-bold mt-2">ダウンロードしたらやること</h3>
+        <ol className="list-decimal mt-2 pl-8 text-sm">
+          <li>GitHub Desktopを起動して、リポジトリ(JapanFruits/frufru)をクローンします</li>
+          <li>Dockerを起動します</li>
+        </ol>
       </section>
 
       <section className="mb-8">
         <h2 className="text-lg font-bold mb-4">dockerを起動する</h2>
         <div className="mb-4">
+          <p className="mb-1 text-sm text-gray-500">furufuruのディレクトリを選択してください</p>
           <Button variant="secondary" onClick={selectDir}>
             ディレクトリを選択する
           </Button>
